@@ -1,0 +1,80 @@
+/* Border-box kaikille */
+*{
+	box-sizing: border-box;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 	0px;
+	padding: 	0px;
+
+	height: 100%;
+
+	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+}
+
+.mainwrapper{
+	/* Keskitetty */
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: white;
+	background-color: rgba(255,255,255,0.2);
+	
+	width: 80%;
+	height: 100%;
+}
+
+.buttonrow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
+	margin: auto;
+
+	width: 60%;
+
+	text-align: justify;
+}
+
+.contentwrapper{
+	flex: 1 1 auto;
+
+	border: 1px dotted black;
+	border-radius: 0.2em;
+
+	height: ;
+}
+
+.canvaswrapper canvas{
+	margin: auto;
+}
+
+.namiska{
+	display: inline-block;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	border: 2px solid #1F1D1D;
+	background-color: #3A3232;
+
+	color: white;
+
+	border-radius: 0.2em;
+
+	transition: all 0.2s;
+}
+
+.namiska:hover{
+	-webkit-transform: scale(1.2, 1.2);
+	-ms-transform: scale(1.2, 1.2);
+		transform: scale(1.2, 1.2);
+}
